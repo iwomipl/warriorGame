@@ -1,0 +1,103 @@
+body{
+    margin: 0 auto;
+    font-size: 15px;
+}
+container{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+}
+container ul{
+    margin: 0 auto;
+    width: 200px;
+    padding: 0;
+}
+container #reset{
+    text-align: center;
+}
+.go-back {
+    margin: auto;
+}
+h1 {
+    color: red;
+    margin: 10px 0 5px 0;
+}
+ul{
+   list-style: none;
+   text-align: center;
+}
+ul > li {
+    text-align: center;
+    border: 1px grey solid;
+    background-color: lightcyan;
+    padding: 10px;
+    pointer-events: none;
+}
+li > div {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 3px;
+}
+span {
+    border: 1px black solid;
+    border-radius: 3px;
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 0 3px;
+    pointer-events: auto;
+}
+span:hover{
+    opacity: 1;
+}
+span.inc {
+    background-color: greenyellow;
+}
+span.dec {
+    background-color: red;
+}
+span.disabled{
+    pointer-events: none;
+    background-color: lightcyan;
+    opacity: 0.2;
+}
+.store{
+    display: block;
+    cursor: pointer;
+    pointer-events: all;
+}
+div.inline{
+    display: inline-block;
+}
+div.middle{
+    width: 50vw;
+}
+#reset{
+    position: relative;
+    padding: 20px;
+    background-color: grey;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+}
+#fight {
+    position: relative;
+    padding: 20px;
+    background-color: red;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+}
+#results{
+    width: auto;
+    text-align: center;
+    border: 1px grey solid;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    padding: 3px;
+}

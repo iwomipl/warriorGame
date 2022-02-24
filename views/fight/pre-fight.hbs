@@ -1,0 +1,28 @@
+{{>next-opponent-button}}
+<div><button type="button" id="fight" value="{{fighter.name}}#%^{{randomWarrior.name}}">FIGHT!</button></div>
+<div>
+<div class="inline">
+<ul>
+    <li id="name"><div>Warrior Name: </div><strong>{{fighter.name}}</strong></li>
+    <li id="hp"><div>Warrior Hp: </div><strong>{{fighter.hp}}</strong></li>
+    <li id="strength"><div>Strength: </div><strong>{{fighter.strength}}</strong></li>
+    <li id="defence"><div>Defence: </div><strong>{{fighter.defence}}</strong></li>
+    <li id="stamina"><div>Stamina: </div><strong>{{fighter.stamina}}</strong></li>
+    <li id="agility"><div>Agility: </div><strong>{{fighter.agility}}</strong></li>
+    <li><div>Wins: </div><strong>{{fighter.wins}}</strong></li>
+</ul>
+</div>
+<div class="inline middle"></div>
+<div class="inline">
+    <ul>
+        <li id="name2"><div>Warrior Name: </div><strong>{{randomWarrior.name}}</strong></li>
+        <li id="hp"><div>Warrior Hp: </div><strong>{{randomWarrior.hp}}</strong></li>
+        <li id="strength"><div>Strength: </div><strong>{{randomWarrior.strength}}</strong></li>
+        <li id="defence"><div>Defence: </div><strong>{{randomWarrior.defence}}</strong></li>
+        <li id="stamina"><div>Stamina: </div><strong>{{randomWarrior.stamina}}</strong></li>
+        <li id="agility"><div>Agility: </div><strong>{{randomWarrior.agility}}</strong></li>
+        <li><div>Wins: </div><strong>{{randomWarrior.wins}}</strong></li>
+    </ul>
+</div>
+</div>
+<script src="/assets/scripts/pre-fight.js"></script>

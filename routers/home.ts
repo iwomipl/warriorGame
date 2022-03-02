@@ -69,10 +69,10 @@ export class HomeRouter {
     private async nextFight(req: Request, res: Response, next: NextFunction){
         const myFighterName = req.query.name as string;
         const opponentsName = req.query.warriorTwoName as string;
-        console.log('nextFight ', myFighterName)
+
         const {name, strength, defence, stamina, agility, wins, hp} = (await Warrior.findWarrior(myFighterName))[0];
         const fighter = new Warrior(name, strength, defence, stamina, agility, wins);
-        console.log(fighter);
+
         const randomWarrior= (await fighter.findRandomWarrior(opponentsName))[0] as Warrior;
 
         res.render('fight/pre-fight', {

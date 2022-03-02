@@ -34,8 +34,6 @@ export class Fight{
                 const warriorWon: Warrior = await (await Warrior.findWarrior(this.attacker.name))[0];
                 await Warrior.addWin(warriorWon.name);
 
-                console.log(this.rounds);
-
                 return this.rounds;
             }
         } catch {
